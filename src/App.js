@@ -1,28 +1,33 @@
 import React from 'react';
+import PlacesData from "./places";
 
 class App extends React.Component {
-  onClickShowMe;
 
   constructor() {
     super();
+    this.state = {
+      places: PlacesData,
+      currentPlaceIndex: 0
+    };
   }
 
-  onClickShowMe() {
-    console.log("TODO: implement Show Me");
+  onClickNextPlace() {
+    this.setState({
+      currentPlaceIndex: (this.state.currentPlaceIndex + 1) % this.state.places.length
+    });
   }
 
   render() {
     return (
       <div>
         <header>
-          <h2>WhatToGet.Online</h2>
-          <h4>great ideas hand picked from amazon</h4>
+          <h2>Places in London I like</h2>
         </header>
         <section>
-          Tech Gifts
+          {this.state.places[this.state.currentPlaceIndex].name}
         </section>
         <footer>
-          <button onClick={this.onClickShowMe}>Show Me</button>
+          <button onClick={() => this.onClickNextPlace()}>Next Place</button>
         </footer>
       </div>
     );

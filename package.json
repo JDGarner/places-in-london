@@ -6,7 +6,7 @@
   "scripts": {
     "build-dev": "webpack --config webpack.config.js",
     "build-prod": "NODE_ENV=production webpack --config webpack.production.config.js",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server -d",
     "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
