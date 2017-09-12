@@ -10,3 +10,19 @@ test('<Place /> renders correctly', () => {
 
   expect(toJson(tree)).toMatchSnapshot();
 });
+
+// it('should call event handler', () => {
+//     const value = '2';
+//     const onChange = jest.fn();
+//     const wrapper = shallow(
+//         <Component onChange={onChange} />
+//     );
+//
+//     expect(wrapper).toMatchSnapshot();
+//
+//     wrapper.find('select').simulate('change', {
+//         target: { value },
+//     });
+//
+//     expect(onChange).toBeCalledWith(value);
+// });
