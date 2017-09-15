@@ -1,34 +1,34 @@
-export function getPlaces() {
+export default function getPlaces() {
   return [
     {
-      name: "Nomadic Community Gardens"
+      name: 'Nomadic Community Gardens',
     },
     {
-      name: "Old Fountain"
+      name: 'Old Fountain',
     },
     {
-      name: "Ace Hotel"
+      name: 'Ace Hotel',
     },
     {
-      name: "Brewdog Shoreditch"
+      name: 'Brewdog Shoreditch',
     },
     {
-      name: "Crate Brewery"
+      name: 'Crate Brewery',
     },
     {
-      name: "The Hoxton"
+      name: 'The Hoxton',
     },
     {
-      name: "The Alchemist"
+      name: 'The Alchemist',
     },
     {
-      name: "La Bouche"
+      name: 'La Bouche',
     },
     {
-      name: "Brick Lane Book Shop"
+      name: 'Brick Lane Book Shop',
     },
     {
-      name: "Mother Kelly's"
-    }
+      name: "Mother Kelly's",
+    },
   ];
 }
