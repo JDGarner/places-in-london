@@ -19,3 +19,8 @@ Prod Setup:
 npm run build-prod
 npm start
 ```
+
+Run Tests:
+```
+npm run test
+```
